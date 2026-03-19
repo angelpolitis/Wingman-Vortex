@@ -1,0 +1,32 @@
+{
+    "name": "Wingman/Vortex",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "A high-performance and prioritised class discovery library for the Wingman framework, featuring case-insensitive resolution, weighted autoloader queues, and APCu/static caching for production-grade portability and speed.",
+    "authors": [
+        {
+            "name": "Angel Politis",
+            "email": "info@angelpolitis.com"
+        }
+    ],
+    "license": "MPL-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/angelpolitis/Wingman-Vortex.git"
+    },
+    "homepage": "https://github.com/angelpolitis/Wingman-Vortex",
+    "php": ">=8.1",
+    "dependencies": [
+        {
+            "package": "Wingman/Cortex",
+            "version": ">=1.0",
+            "optional": true
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wingman.Vortex.": "src/",
+            "Wingman.Vortex.Tests.": "tests/"
+        }
+    }
+}

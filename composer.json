@@ -1,0 +1,30 @@
+{
+    "name": "wingman/vortex",
+    "type": "library",
+    "description": "A high-performance, prioritized class discovery engine featuring multi-tiered caching (APCu, Static, Disk) and case-insensitive resolution for maximum OS portability.",
+    "keywords": ["php", "autoloader", "psr-4", "case-insensitive", "performance", "apcu", "wingman"],
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Angel Politis",
+            "email": "info@angelpolitis.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "wingman/argus": ">=1.0"
+    },
+    "suggest": {
+        "ext-apcu": "Required for persistent path caching across requests.",
+        "wingman/argus": "Required to run the test suite."
+    },
+    "autoload": {
+        "psr-4": {
+            "Wingman\\Vortex\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
