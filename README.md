@@ -161,11 +161,11 @@ Because `ConfigGroup` is used internally, direct map input can stay short (`enab
 
 Autoloader exposes a package-level exception contract:
 
-* `Wingman\\Vortex\\Interfaces\\VortexException`
-* `Wingman\\Vortex\\Exceptions\\LackOfEligibleFilesException`
-* `Wingman\\Vortex\\Exceptions\\DuplicateAutoloaderNameException`
-* `Wingman\\Vortex\\Exceptions\\InvalidExtensionTypeException`
-* `Wingman\\Vortex\\Exceptions\\SourceFileReadException`
+* `Wingman\Vortex\Interfaces\VortexException`
+* `Wingman\Vortex\Exceptions\LackOfEligibleFilesException`
+* `Wingman\Vortex\Exceptions\DuplicateAutoloaderNameException`
+* `Wingman\Vortex\Exceptions\InvalidExtensionTypeException`
+* `Wingman\Vortex\Exceptions\SourceFileReadException`
 
 Only the interface is generic; exception classes are purpose-specific so consumers can catch exact failure cases or the grouped package contract.
 
